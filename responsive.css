@@ -258,7 +258,7 @@
     line-height: 15px;
     font-size: 10px;
     font-weight: 700;
-    padding-bottom: 9px;
+    padding-bottom: 14px;
   }
 
   .line {
@@ -285,7 +285,7 @@
   }
 
   .flow-image .last-part p {
-    padding-bottom: 9px;
+    padding-bottom: 12px;
     line-height: 15px;
     padding-left: 0;
     text-align: center;
