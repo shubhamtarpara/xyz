@@ -285,10 +285,10 @@
   }
 
   .flow-image .last-part p {
-    padding-bottom: 12px;
     line-height: 15px;
     padding-left: 0;
     text-align: center;
+    padding-bottom: 14px;
   }
 
   .line {
