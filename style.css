@@ -1,0 +1,416 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc800;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #ffc800;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc800;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 255, 200, 0;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 200, 0;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+      "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0));
+    --bs-body-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont,
+      Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+      Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+  }
+  
+  /* ----------------------- 
+            Global CSS 
+    --------------------------*/
+  
+  *,
+  *::after,
+  *::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  :active,
+  :hover,
+  :focus {
+    outline: 0 !important;
+    outline-offset: 0;
+  }
+  
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+  
+  /* a:hover {
+    color: var(--primary-color) !important;
+  } */
+  
+  ul,
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  /* navbar */
+  
+  .nav-link {
+    margin: 0 0.5rem;
+  }
+  
+  .nav-link:active,
+  .nav-link:focus,
+  .nav-link:hover {
+    color: var(--bs-yellow);
+  }
+  
+  .navbar-brand img {
+    height: 1.5rem;
+  }
+  
+  #navigation {
+    background-color: black;
+  }
+  
+  .main-heading {
+    background: url("./assets/img/header-bg.jpg") no-repeat center 
+  }
+  
+  .main-heading .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 17rem;
+    padding-bottom: 12.5rem;
+  }
+  
+  .text-title{
+    font-size: 2.5rem;
+   font-weight: 700;
+  }
+  
+  .heading {
+    margin-top: 2rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    font-size: 4.5rem;
+    font-family: "Montserrat";
+  }
+  
+  
+  .sub-heading {
+    font-family: "Roboto Slab";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  
+  .btn-xl {
+    background-color: var(--bs-yellow);
+    border: none;
+    font-weight: 700;
+    font-family: "Montserrat";
+    font-size: 1.125rem;
+    padding: 1.25rem 2.5rem;
+    margin-top: 4rem;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #d9aa00;
+    border-color: #cca000;
+  }
+  .about {
+    padding: 6rem 0;
+  }
+  
+  .firsttop-heading,.firsttop-paragraph{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .firsttop-heading{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+  
+  .firsttop-paragraph{
+    font-size: 20px;
+    font-style: italic;
+    color: gray;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  #services {
+    overflow: hidden;
+  }
+  
+  #services .container {
+    padding: 2rem 0;
+  }
+  
+  .fa-stack {
+    color: var(--bs-yellow);
+  }
+  
+  #portfolio {
+    padding-top: 5rem;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flow-diagram{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 60%;
+    margin-top: 70px;
+    margin-bottom: 95px;
+  }
+  
+  .flow-box{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  
+  .last-box{
+    min-height: 160px;
+  }
+  
+  .details{
+    width: 38%;
+  }
+  
+  .details h2{
+    font-family: sans-serif;
+  }
+  
+  .details p{
+    font-size: 17px;
+    color: gray;
+  }
+  
+  .flow-image{
+    width: 24%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .last-flow-image{
+    min-height: 160px;
+  }
+  
+  .flow-image img,.flow-image .last-part{
+    border: 7px solid lightgray;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+  }
+  
+  .flow-image .last-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 12px;
+    background-color: rgb(243, 195, 64);
+  }
+  .flow-image .last-part p{
+    width: 45%;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: white;
+  }
+  
+  .empty{
+    width: 38%;
+  }
+  
+  .odd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+  }
+  
+  .line{
+    border:1px solid lightgray;
+    height: 140px;
+  }
+  
+  .about-section {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .new-take {
+    text-align: center;
+    display: inline-flex;
+    margin-top: 0.235rem;
+  }
+  
+  .btn-social {
+    height: 2.5rem;
+    width: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border-radius: 100%;
+  }
+  .btn-dark:hover {
+    color: #fff;
+    background-color: #1a1e21;
+    border-color: #1a1e21;}
+  
+  .new-card {
+    border: none;
+    border-radius: 0px;
+  }
+  
+  .new-card img {
+    width: 14rem;
+    height: 14rem;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    align-self: center;
+  }
+  
+  .img-brand {
+    height: 2.75rem;
+  }
+  
+  .new-width {
+    width: 90%;
+  }
+  .title{
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  #contact {
+    background: url("./assets/img/map-image.png") no-repeat center;
+  
+    background-color:#212529;
+  }
+  
+  .form-class .col-md-6 {
+    padding: 0 0.5rem;
+  }
+  
+  .form-control {
+    padding: 0;
+    height: 3rem;
+    line-height: 1.5rem;
+  }
+  
+  .form-group {
+    border-radius: 5px;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group textarea {
+    border-radius: 5px;
+    height: auto;
+  }
+  
+  ::placeholder {
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: lightgray;
+    font-weight: 700;
+    padding-left: 20px;
+  }
+  .text-muted{
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .btn-xl-l {
+    background-color: var(--bs-yellow);
+    border: none;
+    font-size: 1.125rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    padding: 1.25rem 2.5rem;
+    margin-top: 1rem;
+    opacity: .7;
+    color: white
+  } 
+  
